@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+}
+body {
+  background-color: lightgray;
+}
+#results {
+  font-size: 20px;
+}
