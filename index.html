@@ -9,7 +9,23 @@
     <title>Beep Boop Generator</title>
   </head>
   <body>
-    <h1>BEEP BOOP COUNTER</h1>
-    
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>BEEP BOOP COUNTER</h1>
+      </div>
+      <div class="well">
+        <form id="input-form">
+          <div class="form-group">
+            <label for="number">PLEASE ENTER A NUMBER</label>
+            <input class="form-control input-lg" id="number" type="text">
+          </div>
+          <button type="submit" class="btn-lg">COMPUTE</button>
+        </form>
+      </div>
+      <div class="well" id="result">
+        <h2><span class="output"></span></h2>
+      </div>
+    </div>
   </body>
 </html>
