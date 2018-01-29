@@ -1,3 +1,4 @@
+//business logic
 var byThree = function(number) {
   parseInt(number);
   if (number % 3 === 0 && number !== 0) {
@@ -9,7 +10,7 @@ var byThree = function(number) {
 var beep = function(number) {
   number.split("");
   for (var i = 0; i <= number.length; i += 1) {
-    if(number(i) === "0") {
+    if(number[i] === "0") {
       return true;
 };
 };
@@ -18,7 +19,7 @@ return false;
 var boop = function(number) {
   number.split("");
   for (var i = 0; i <= number.length; i += 1) {
-    if(number(i) === "1") {
+    if(number[i] === "1") {
       return true;
 };
 };
@@ -53,5 +54,5 @@ $(document).ready(function() {
     userInput = otherEntry(userInput);
     $(".output").text(userInput);
     $("#result").show();
-  }
-}
+  });
+});
