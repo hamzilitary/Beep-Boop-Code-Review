@@ -9,31 +9,27 @@ var byThree = function(number) {
 var beep = function(number) {
   number.split("");
   for (var i = 0; i <= number.length; i += 1) {
-    if(number(i) === 0) {
+    if(number(i) === "0") {
       return true;
-       {
-      return false;
 };
 };
-};
+return false;
 };
 var boop = function(number) {
   number.split("");
   for (var i = 0; i <= number.length; i += 1) {
-    if(number(i) === 0) {
+    if(number(i) === "1") {
       return true;
-       {
-      return false;
 };
 };
-};
+return false;
 };
 var rangeCount = function(number) {
   var newArray = [];
-  for (var i = 0; i <= number.length; i += 1) {
-    rangeCount[i] = i;
+  for (var i = 0; i <= number; i += 1) {
+    newArray[i] = i;
   };
-  return rangeCount;
+  return newArray;
 };
 var otherEntry = function(number) {
   if (byThree(number) === true) {
@@ -50,3 +46,12 @@ var otherEntry = function(number) {
 };
 };
 //display logic
+$(document).ready(function() {
+  $("form#input-form").submit(function(event) {
+    event.preventDefault();
+    var userInput = $("input#number").val();
+    userInput = otherEntry(userInput);
+    $(".output").text(userInput);
+    $("#result").show();
+  }
+}
